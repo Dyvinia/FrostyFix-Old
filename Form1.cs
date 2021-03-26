@@ -89,7 +89,8 @@ namespace FrostyFix {
                     rbtn_bf2015.Enabled = true;
                 }
                 else {
-                    rbtn_bf2015.Enabled = false;
+                    rbtn_bf2015.AutoCheck = false;
+                    rbtn_bf2015.ForeColor = System.Drawing.Color.FromArgb(1, 127, 127, 127);
                 }
 
             using (RegistryKey bf2017key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\EA Games\STAR WARS Battlefront II"))
@@ -98,7 +99,8 @@ namespace FrostyFix {
                     rbtn_bf2017.Enabled = true;
                 }
                 else {
-                    rbtn_bf2017.Enabled = false;
+                    rbtn_bf2017.AutoCheck = false;
+                    rbtn_bf2017.ForeColor = System.Drawing.Color.FromArgb(1, 127, 127, 127);
                 }
 
             using (RegistryKey meakey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\WOW6432Node\BioWare\Mass Effect Andromeda"))
@@ -107,7 +109,8 @@ namespace FrostyFix {
                     rbtn_mea.Enabled = true;
                 }
                 else {
-                    rbtn_mea.Enabled = false;
+                    rbtn_mea.AutoCheck = false;
+                    rbtn_mea.ForeColor = System.Drawing.Color.FromArgb(1, 127, 127, 127);
                 }
 
             using (RegistryKey bf1key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\WOW6432Node\EA Games\Battlefield 1"))
@@ -116,7 +119,8 @@ namespace FrostyFix {
                     rbtn_bf1.Enabled = true;
                 }
                 else {
-                    rbtn_bf1.Enabled = false;
+                    rbtn_bf1.AutoCheck = false;
+                    rbtn_bf1.ForeColor = System.Drawing.Color.FromArgb(1, 127, 127, 127);
                 }
 
             using (RegistryKey nfskey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\EA Games\Need for Speed"))
@@ -125,7 +129,8 @@ namespace FrostyFix {
                     rbtn_nfs.Enabled = true;
                 }
                 else {
-                    rbtn_nfs.Enabled = false;
+                    rbtn_nfs.AutoCheck = false;
+                    rbtn_nfs.ForeColor = System.Drawing.Color.FromArgb(1, 127, 127, 127);
                 }
 
             using (RegistryKey nfspaybackkey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\EA Games\Need for Speed Payback"))
@@ -134,7 +139,8 @@ namespace FrostyFix {
                     rbtn_nfspayback.Enabled = true;
                 }
                 else {
-                    rbtn_nfspayback.Enabled = false;
+                    rbtn_nfspayback.AutoCheck = false;
+                    rbtn_nfspayback.ForeColor = System.Drawing.Color.FromArgb(1, 127, 127, 127);
                 }
 
             using (RegistryKey nfsheatkey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\EA Games\Need for Speed Heat"))
@@ -143,7 +149,8 @@ namespace FrostyFix {
                     rbtn_nfsheat.Enabled = true;
                 }
                 else {
-                    rbtn_nfsheat.Enabled = false;
+                    rbtn_nfsheat.AutoCheck = false;
+                    rbtn_nfsheat.ForeColor = System.Drawing.Color.FromArgb(1, 127, 127, 127);
                 }
 
             using (RegistryKey gw2key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\PopCap\Plants vs Zombies GW2"))
@@ -152,7 +159,8 @@ namespace FrostyFix {
                     rbtn_gw2.Enabled = true;
                 }
                 else {
-                    rbtn_gw2.Enabled = false;
+                    rbtn_gw2.AutoCheck = false;
+                    rbtn_gw2.ForeColor = System.Drawing.Color.FromArgb(1, 127, 127, 127);
                 }
 
         }

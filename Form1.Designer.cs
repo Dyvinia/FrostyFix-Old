@@ -47,7 +47,9 @@
             this.rbtn_nfsheat = new System.Windows.Forms.RadioButton();
             this.rbtn_gw2 = new System.Windows.Forms.RadioButton();
             this.rbtn_nfspayback = new System.Windows.Forms.RadioButton();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_title
@@ -56,7 +58,7 @@
             this.lbl_title.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_title.Location = new System.Drawing.Point(334, 3);
             this.lbl_title.Name = "lbl_title";
-            this.lbl_title.Size = new System.Drawing.Size(181, 69);
+            this.lbl_title.Size = new System.Drawing.Size(181, 63);
             this.lbl_title.TabIndex = 0;
             this.lbl_title.Text = "FrostyFix";
             this.lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -85,6 +87,7 @@
             // rbtn_bf2015
             // 
             this.rbtn_bf2015.AutoSize = true;
+            this.rbtn_bf2015.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.rbtn_bf2015.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtn_bf2015.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.rbtn_bf2015.Location = new System.Drawing.Point(60, 94);
@@ -93,12 +96,13 @@
             this.rbtn_bf2015.TabIndex = 3;
             this.rbtn_bf2015.TabStop = true;
             this.rbtn_bf2015.Text = "Star Wars Battlefront (2015)";
-            this.rbtn_bf2015.UseVisualStyleBackColor = true;
+            this.rbtn_bf2015.UseVisualStyleBackColor = false;
             this.rbtn_bf2015.CheckedChanged += new System.EventHandler(this.rbtn_bf2015_CheckedChanged);
             // 
             // rbtn_bf2017
             // 
             this.rbtn_bf2017.AutoSize = true;
+            this.rbtn_bf2017.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.rbtn_bf2017.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtn_bf2017.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.rbtn_bf2017.Location = new System.Drawing.Point(60, 121);
@@ -107,12 +111,13 @@
             this.rbtn_bf2017.TabIndex = 4;
             this.rbtn_bf2017.TabStop = true;
             this.rbtn_bf2017.Text = "Star Wars Battlefront II (2017)";
-            this.rbtn_bf2017.UseVisualStyleBackColor = true;
+            this.rbtn_bf2017.UseVisualStyleBackColor = false;
             this.rbtn_bf2017.CheckedChanged += new System.EventHandler(this.rbtn_bf2017_CheckedChanged);
             // 
             // rbtn_mea
             // 
             this.rbtn_mea.AutoSize = true;
+            this.rbtn_mea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.rbtn_mea.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtn_mea.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.rbtn_mea.Location = new System.Drawing.Point(565, 94);
@@ -121,12 +126,13 @@
             this.rbtn_mea.TabIndex = 5;
             this.rbtn_mea.TabStop = true;
             this.rbtn_mea.Text = "Mass Effect Andromeda";
-            this.rbtn_mea.UseVisualStyleBackColor = true;
+            this.rbtn_mea.UseVisualStyleBackColor = false;
             this.rbtn_mea.CheckedChanged += new System.EventHandler(this.rbtn_mea_CheckedChanged);
             // 
             // rbtn_custom
             // 
             this.rbtn_custom.AutoSize = true;
+            this.rbtn_custom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.rbtn_custom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtn_custom.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.rbtn_custom.Location = new System.Drawing.Point(60, 255);
@@ -135,7 +141,7 @@
             this.rbtn_custom.TabIndex = 7;
             this.rbtn_custom.TabStop = true;
             this.rbtn_custom.Text = "Custom";
-            this.rbtn_custom.UseVisualStyleBackColor = true;
+            this.rbtn_custom.UseVisualStyleBackColor = false;
             // 
             // txtb_custompath
             // 
@@ -161,6 +167,7 @@
             // 
             // lbl_enabled
             // 
+            this.lbl_enabled.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.lbl_enabled.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_enabled.Location = new System.Drawing.Point(150, 316);
             this.lbl_enabled.Name = "lbl_enabled";
@@ -181,6 +188,7 @@
             // rbtn_bf1
             // 
             this.rbtn_bf1.AutoSize = true;
+            this.rbtn_bf1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.rbtn_bf1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtn_bf1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.rbtn_bf1.Location = new System.Drawing.Point(60, 147);
@@ -189,7 +197,7 @@
             this.rbtn_bf1.TabIndex = 14;
             this.rbtn_bf1.TabStop = true;
             this.rbtn_bf1.Text = "Battlefield One";
-            this.rbtn_bf1.UseVisualStyleBackColor = true;
+            this.rbtn_bf1.UseVisualStyleBackColor = false;
             this.rbtn_bf1.CheckedChanged += new System.EventHandler(this.rbtn_bf1_CheckedChanged);
             // 
             // pictureBox1
@@ -216,6 +224,7 @@
             // rbtn_nfs
             // 
             this.rbtn_nfs.AutoSize = true;
+            this.rbtn_nfs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.rbtn_nfs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtn_nfs.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.rbtn_nfs.Location = new System.Drawing.Point(326, 94);
@@ -224,12 +233,13 @@
             this.rbtn_nfs.TabIndex = 17;
             this.rbtn_nfs.TabStop = true;
             this.rbtn_nfs.Text = "Need for Speed";
-            this.rbtn_nfs.UseVisualStyleBackColor = true;
+            this.rbtn_nfs.UseVisualStyleBackColor = false;
             this.rbtn_nfs.CheckedChanged += new System.EventHandler(this.rbtn_nfs_CheckedChanged);
             // 
             // rbtn_nfsheat
             // 
             this.rbtn_nfsheat.AutoSize = true;
+            this.rbtn_nfsheat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.rbtn_nfsheat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtn_nfsheat.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.rbtn_nfsheat.Location = new System.Drawing.Point(326, 147);
@@ -238,12 +248,13 @@
             this.rbtn_nfsheat.TabIndex = 18;
             this.rbtn_nfsheat.TabStop = true;
             this.rbtn_nfsheat.Text = "Need for Speed Heat";
-            this.rbtn_nfsheat.UseVisualStyleBackColor = true;
+            this.rbtn_nfsheat.UseVisualStyleBackColor = false;
             this.rbtn_nfsheat.CheckedChanged += new System.EventHandler(this.rbtn_nfsheat_CheckedChanged);
             // 
             // rbtn_gw2
             // 
             this.rbtn_gw2.AutoSize = true;
+            this.rbtn_gw2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.rbtn_gw2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtn_gw2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.rbtn_gw2.Location = new System.Drawing.Point(565, 121);
@@ -252,12 +263,13 @@
             this.rbtn_gw2.TabIndex = 19;
             this.rbtn_gw2.TabStop = true;
             this.rbtn_gw2.Text = "PvZ: Garden Warfare 2";
-            this.rbtn_gw2.UseVisualStyleBackColor = true;
+            this.rbtn_gw2.UseVisualStyleBackColor = false;
             this.rbtn_gw2.CheckedChanged += new System.EventHandler(this.rbtn_gw2_CheckedChanged);
             // 
             // rbtn_nfspayback
             // 
             this.rbtn_nfspayback.AutoSize = true;
+            this.rbtn_nfspayback.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.rbtn_nfspayback.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtn_nfspayback.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.rbtn_nfspayback.Location = new System.Drawing.Point(326, 121);
@@ -266,8 +278,18 @@
             this.rbtn_nfspayback.TabIndex = 20;
             this.rbtn_nfspayback.TabStop = true;
             this.rbtn_nfspayback.Text = "Need for Speed Payback";
-            this.rbtn_nfspayback.UseVisualStyleBackColor = true;
+            this.rbtn_nfspayback.UseVisualStyleBackColor = false;
             this.rbtn_nfspayback.CheckedChanged += new System.EventHandler(this.rbtn_nfspayback_CheckedChanged);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.pictureBox2.Location = new System.Drawing.Point(5, 69);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(790, 375);
+            this.pictureBox2.TabIndex = 21;
+            this.pictureBox2.TabStop = false;
             // 
             // Form1
             // 
@@ -280,7 +302,6 @@
             this.Controls.Add(this.rbtn_nfsheat);
             this.Controls.Add(this.rbtn_nfs);
             this.Controls.Add(this.btn_github);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.rbtn_bf1);
             this.Controls.Add(this.btn_info);
             this.Controls.Add(this.lbl_enabled);
@@ -293,6 +314,8 @@
             this.Controls.Add(this.btn_disable);
             this.Controls.Add(this.btn_enable);
             this.Controls.Add(this.lbl_title);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -300,6 +323,7 @@
             this.Text = "FrostyFix";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -325,6 +349,7 @@
         private System.Windows.Forms.RadioButton rbtn_nfsheat;
         private System.Windows.Forms.RadioButton rbtn_gw2;
         private System.Windows.Forms.RadioButton rbtn_nfspayback;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
