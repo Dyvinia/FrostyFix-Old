@@ -24,7 +24,11 @@ namespace FrostyFix {
         private void btn_enable_Click(object sender, EventArgs e) {
             Environment.SetEnvironmentVariable("GAME_DATA_DIR", datadir + "\\ModData", EnvironmentVariableTarget.User);
             var isenabled = Environment.GetEnvironmentVariable("GAME_DATA_DIR", EnvironmentVariableTarget.User);
-            if (isenabled != null) {
+            if (isenabled == "\\ModData") {
+                lbl_enabled.Text = "Registry Key is Currently Broken";
+                lbl_enabled.ForeColor = Color.Orange;
+            }
+            else if (isenabled != null) {
                 lbl_enabled.Text = "Mods are Currently Enabled";
                 lbl_enabled.ForeColor = Color.LightGreen;
             }
@@ -39,7 +43,11 @@ namespace FrostyFix {
         private void btn_disable_Click(object sender, EventArgs e) {
             Environment.SetEnvironmentVariable("GAME_DATA_DIR", "", EnvironmentVariableTarget.User);
             var isenabled = Environment.GetEnvironmentVariable("GAME_DATA_DIR", EnvironmentVariableTarget.User);
-            if (isenabled != null) {
+            if (isenabled == "\\ModData") {
+                lbl_enabled.Text = "Registry Key is Currently Broken";
+                lbl_enabled.ForeColor = Color.Orange;
+            }
+            else if (isenabled != null) {
                 lbl_enabled.Text = "Mods are Currently Enabled";
                 lbl_enabled.ForeColor = Color.LightGreen;
             }
@@ -54,7 +62,11 @@ namespace FrostyFix {
         private void Form1_Load(object sender, EventArgs e) {
 
             var isenabled = Environment.GetEnvironmentVariable("GAME_DATA_DIR", EnvironmentVariableTarget.User);
-            if (isenabled != null) {
+            if (isenabled == "\\ModData") {
+                lbl_enabled.Text = "Registry Key is Currently Broken";
+                lbl_enabled.ForeColor = Color.Orange;
+            }
+            else if (isenabled != null) {
                 lbl_enabled.Text = "Mods are Currently Enabled";
                 lbl_enabled.ForeColor = Color.LightGreen;
             }
@@ -173,7 +185,7 @@ namespace FrostyFix {
         }
 
         private void btn_info_Click(object sender, EventArgs e) {
-            string message = "FrostyFix v1.1.0 for Epic Games Store, Steam, and EA Desktop\r\nCreated by Dulana57, based off the batch file by VictorPLopes and BattleDash\r\n\r\nIt is recommended to launch the game with Frosty after forcing mods.\r\nIt works directly from Origin/EA Desktop but it's better to launch the Game from Frosty Mod Manager/Editor to guarantee everything is working fine and to refresh your mod list.\r\nYou must run this program again every time you want to play another Battlefront game, so you can either disable mods or select the other game.\r\nYou must disable this whenever you play any other Frostbite game or if you encounter issues with other games.\r\nIt may help to restart your computer after running this program.\r\n\r\nFor more information about this fix and/or support, join the Battlefront Modding Discord server at https://discord.gg/EzXSJfUDmq";
+            string message = "FrostyFix v1.1.0 for Epic Games Store, Steam, and EA Desktop\r\nCreated by Dulana57, based off the batch file by VictorPLopes, BattleDash & Dulana57\r\n\r\nIt is recommended to launch the game with Frosty after forcing mods.\r\nIt works directly from Origin/EA Desktop but it's better to launch the Game from Frosty Mod Manager/Editor to guarantee everything is working fine and to refresh your mod list.\r\nYou must run this program again every time you want to play another Battlefront game, so you can either disable mods or select the other game.\r\nYou must disable this whenever you play any other Frostbite game or if you encounter issues with other games.\r\nIt may help to restart your computer after running this program.\r\n\r\nFor more information about this fix and/or support, join the Battlefront Modding Discord server at https://discord.gg/EzXSJfUDmq";
             string title = "Info";
             MessageBox.Show(message, title);
         }
