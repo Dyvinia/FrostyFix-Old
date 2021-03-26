@@ -20,4 +20,4 @@ It works directly from Origin/EA Desktop but it's better to launch Battlefront f
 **You must run this program again every time you want to play another Frostbite game**, so you can either disable mods or select the other game.
 
 ## Support
-For more information about this fix and/or support, join the [BattlefrontModding](https://discord.gg/EzXSJfUDmq) Discord Server
+For more information about this fix and/or support, join the [BattlefrontModding](https://discord.gg/EzXSJfUDmq) Discord Server or join my [Personal Discord Server](https://discord.gg/57sJ6fj)
