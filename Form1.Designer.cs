@@ -42,6 +42,9 @@
             this.btn_info = new System.Windows.Forms.Button();
             this.rbtn_bf1 = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_github = new System.Windows.Forms.Button();
+            this.rbtn_nfs = new System.Windows.Forms.RadioButton();
+            this.rbtn_nfsheat = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -199,12 +202,53 @@
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
+            // btn_github
+            // 
+            this.btn_github.Location = new System.Drawing.Point(632, 12);
+            this.btn_github.Name = "btn_github";
+            this.btn_github.Size = new System.Drawing.Size(75, 23);
+            this.btn_github.TabIndex = 16;
+            this.btn_github.Text = "GitHub";
+            this.btn_github.UseVisualStyleBackColor = true;
+            this.btn_github.Click += new System.EventHandler(this.btn_github_Click);
+            // 
+            // rbtn_nfs
+            // 
+            this.rbtn_nfs.AutoSize = true;
+            this.rbtn_nfs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtn_nfs.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.rbtn_nfs.Location = new System.Drawing.Point(300, 94);
+            this.rbtn_nfs.Name = "rbtn_nfs";
+            this.rbtn_nfs.Size = new System.Drawing.Size(122, 20);
+            this.rbtn_nfs.TabIndex = 17;
+            this.rbtn_nfs.TabStop = true;
+            this.rbtn_nfs.Text = "Need for Speed";
+            this.rbtn_nfs.UseVisualStyleBackColor = true;
+            this.rbtn_nfs.CheckedChanged += new System.EventHandler(this.rbtn_nfs_CheckedChanged);
+            // 
+            // rbtn_nfsheat
+            // 
+            this.rbtn_nfsheat.AutoSize = true;
+            this.rbtn_nfsheat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtn_nfsheat.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.rbtn_nfsheat.Location = new System.Drawing.Point(300, 121);
+            this.rbtn_nfsheat.Name = "rbtn_nfsheat";
+            this.rbtn_nfsheat.Size = new System.Drawing.Size(154, 20);
+            this.rbtn_nfsheat.TabIndex = 18;
+            this.rbtn_nfsheat.TabStop = true;
+            this.rbtn_nfsheat.Text = "Need for Speed Heat";
+            this.rbtn_nfsheat.UseVisualStyleBackColor = true;
+            this.rbtn_nfsheat.CheckedChanged += new System.EventHandler(this.rbtn_nfsheat_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.rbtn_nfsheat);
+            this.Controls.Add(this.rbtn_nfs);
+            this.Controls.Add(this.btn_github);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.rbtn_bf1);
             this.Controls.Add(this.btn_info);
@@ -245,6 +289,9 @@
         private System.Windows.Forms.Button btn_info;
         private System.Windows.Forms.RadioButton rbtn_bf1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btn_github;
+        private System.Windows.Forms.RadioButton rbtn_nfs;
+        private System.Windows.Forms.RadioButton rbtn_nfsheat;
     }
 }
 
