@@ -45,6 +45,7 @@
             this.btn_github = new System.Windows.Forms.Button();
             this.rbtn_nfs = new System.Windows.Forms.RadioButton();
             this.rbtn_nfsheat = new System.Windows.Forms.RadioButton();
+            this.rbtn_gw2 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -113,7 +114,7 @@
             this.rbtn_mea.AutoSize = true;
             this.rbtn_mea.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtn_mea.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.rbtn_mea.Location = new System.Drawing.Point(60, 148);
+            this.rbtn_mea.Location = new System.Drawing.Point(491, 94);
             this.rbtn_mea.Name = "rbtn_mea";
             this.rbtn_mea.Size = new System.Drawing.Size(169, 20);
             this.rbtn_mea.TabIndex = 5;
@@ -134,7 +135,6 @@
             this.rbtn_custom.TabStop = true;
             this.rbtn_custom.Text = "Custom";
             this.rbtn_custom.UseVisualStyleBackColor = true;
-            this.rbtn_custom.CheckedChanged += new System.EventHandler(this.rbtn_custom_CheckedChanged);
             // 
             // txtb_custompath
             // 
@@ -182,7 +182,7 @@
             this.rbtn_bf1.AutoSize = true;
             this.rbtn_bf1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtn_bf1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.rbtn_bf1.Location = new System.Drawing.Point(60, 175);
+            this.rbtn_bf1.Location = new System.Drawing.Point(60, 147);
             this.rbtn_bf1.Name = "rbtn_bf1";
             this.rbtn_bf1.Size = new System.Drawing.Size(113, 20);
             this.rbtn_bf1.TabIndex = 14;
@@ -240,12 +240,27 @@
             this.rbtn_nfsheat.UseVisualStyleBackColor = true;
             this.rbtn_nfsheat.CheckedChanged += new System.EventHandler(this.rbtn_nfsheat_CheckedChanged);
             // 
+            // rbtn_gw2
+            // 
+            this.rbtn_gw2.AutoSize = true;
+            this.rbtn_gw2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtn_gw2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.rbtn_gw2.Location = new System.Drawing.Point(491, 121);
+            this.rbtn_gw2.Name = "rbtn_gw2";
+            this.rbtn_gw2.Size = new System.Drawing.Size(162, 20);
+            this.rbtn_gw2.TabIndex = 19;
+            this.rbtn_gw2.TabStop = true;
+            this.rbtn_gw2.Text = "PvZ: Garden Warfare 2";
+            this.rbtn_gw2.UseVisualStyleBackColor = true;
+            this.rbtn_gw2.CheckedChanged += new System.EventHandler(this.rbtn_gw2_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.rbtn_gw2);
             this.Controls.Add(this.rbtn_nfsheat);
             this.Controls.Add(this.rbtn_nfs);
             this.Controls.Add(this.btn_github);
@@ -292,6 +307,7 @@
         private System.Windows.Forms.Button btn_github;
         private System.Windows.Forms.RadioButton rbtn_nfs;
         private System.Windows.Forms.RadioButton rbtn_nfsheat;
+        private System.Windows.Forms.RadioButton rbtn_gw2;
     }
 }
 

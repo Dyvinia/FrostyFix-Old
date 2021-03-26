@@ -11,6 +11,7 @@ namespace FrostyFix {
 
         public Form2() {
             InitializeComponent();
+            //Get Origin and/or EA Desktop paths
             using (RegistryKey origindirkey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\WOW6432Node\Electronic Arts\EA Core"))
                 if (origindirkey != null) {
                     origindir = (string)origindirkey.GetValue("EADM6InstallDir");
@@ -28,10 +29,20 @@ namespace FrostyFix {
         }
 
         private async void btn_restartEA_Click(object sender, EventArgs e) {
+            //Kill all EA processes
             foreach (var process in Process.GetProcessesByName("EADesktop")) {
                 process.Kill();
             }
             foreach (var process in Process.GetProcessesByName("Origin")) {
+                process.Kill();
+            }
+            foreach (var process in Process.GetProcessesByName("EABackgroundService")) {
+                process.Kill();
+            }
+            foreach (var process in Process.GetProcessesByName("OriginClientService")) {
+                process.Kill();
+            }
+            foreach (var process in Process.GetProcessesByName("OriginWebHelperService")) {
                 process.Kill();
             }
             await Task.Delay(8000);
@@ -40,10 +51,20 @@ namespace FrostyFix {
         }
 
         private async void btn_restartOrigin_Click(object sender, EventArgs e) {
+            //Kill all EA processes
             foreach (var process in Process.GetProcessesByName("EADesktop")) {
                 process.Kill();
             }
             foreach (var process in Process.GetProcessesByName("Origin")) {
+                process.Kill();
+            }
+            foreach (var process in Process.GetProcessesByName("EABackgroundService")) {
+                process.Kill();
+            }
+            foreach (var process in Process.GetProcessesByName("OriginClientService")) {
+                process.Kill();
+            }
+            foreach (var process in Process.GetProcessesByName("OriginWebHelperService")) {
                 process.Kill();
             }
             await Task.Delay(8000);

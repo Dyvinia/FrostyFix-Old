@@ -14,6 +14,7 @@ namespace FrostyFix {
         string bf1;
         string nfs;
         string nfsheat;
+        string gw2;
         string datadir;
 
 
@@ -23,6 +24,8 @@ namespace FrostyFix {
 
         private void btn_enable_Click(object sender, EventArgs e) {
             Environment.SetEnvironmentVariable("GAME_DATA_DIR", datadir + "\\ModData", EnvironmentVariableTarget.User);
+            
+            //Recheck patch status
             var isenabled = Environment.GetEnvironmentVariable("GAME_DATA_DIR", EnvironmentVariableTarget.User);
             if (isenabled == "\\ModData") {
                 lbl_enabled.Text = "Registry Key is Currently Broken";
@@ -42,6 +45,8 @@ namespace FrostyFix {
 
         private void btn_disable_Click(object sender, EventArgs e) {
             Environment.SetEnvironmentVariable("GAME_DATA_DIR", "", EnvironmentVariableTarget.User);
+            
+            //Recheck patch status
             var isenabled = Environment.GetEnvironmentVariable("GAME_DATA_DIR", EnvironmentVariableTarget.User);
             if (isenabled == "\\ModData") {
                 lbl_enabled.Text = "Registry Key is Currently Broken";
@@ -61,6 +66,7 @@ namespace FrostyFix {
 
         private void Form1_Load(object sender, EventArgs e) {
 
+            //Check patch status
             var isenabled = Environment.GetEnvironmentVariable("GAME_DATA_DIR", EnvironmentVariableTarget.User);
             if (isenabled == "\\ModData") {
                 lbl_enabled.Text = "Registry Key is Currently Broken";
@@ -75,6 +81,7 @@ namespace FrostyFix {
                 lbl_enabled.ForeColor = Color.LightSalmon;
             }
 
+            //Save Paths using Registry
             using (RegistryKey bf2015key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Wow6432Node\EA Games\STAR WARS Battlefront"))
                 if (bf2015key != null) {
                     bf2015 = (string)bf2015key.GetValue("Install Dir");
@@ -129,8 +136,18 @@ namespace FrostyFix {
                     rbtn_nfsheat.Enabled = false;
                 }
 
+            using (RegistryKey gw2key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\PopCap\Plants vs Zombies GW2"))
+                if (gw2key != null) {
+                    gw2 = (string)gw2key.GetValue("Install Dir");
+                    rbtn_gw2.Enabled = true;
+                }
+                else {
+                    rbtn_gw2.Enabled = false;
+                }
+
         }
 
+        //Choose Game
         private void rbtn_bf2015_CheckedChanged(object sender, EventArgs e) {
             datadir = bf2015;
             btn_enable.Enabled = true;
@@ -167,9 +184,13 @@ namespace FrostyFix {
             btn_disable.Enabled = true;
         }
 
-        private void rbtn_custom_CheckedChanged(object sender, EventArgs e) {
+        private void rbtn_gw2_CheckedChanged(object sender, EventArgs e) {
+            datadir = gw2;
+            btn_enable.Enabled = true;
+            btn_disable.Enabled = true;
         }
 
+        //Choose custom path
         private void btn_customchoose_Click(object sender, EventArgs e) {
             using (OpenFileDialog openFileDialog = new OpenFileDialog()) {
                 openFileDialog.InitialDirectory = "c:\\";
