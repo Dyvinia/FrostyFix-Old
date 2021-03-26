@@ -46,6 +46,7 @@
             this.rbtn_nfs = new System.Windows.Forms.RadioButton();
             this.rbtn_nfsheat = new System.Windows.Forms.RadioButton();
             this.rbtn_gw2 = new System.Windows.Forms.RadioButton();
+            this.rbtn_nfspayback = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -231,7 +232,7 @@
             this.rbtn_nfsheat.AutoSize = true;
             this.rbtn_nfsheat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtn_nfsheat.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.rbtn_nfsheat.Location = new System.Drawing.Point(326, 121);
+            this.rbtn_nfsheat.Location = new System.Drawing.Point(326, 147);
             this.rbtn_nfsheat.Name = "rbtn_nfsheat";
             this.rbtn_nfsheat.Size = new System.Drawing.Size(154, 20);
             this.rbtn_nfsheat.TabIndex = 18;
@@ -254,12 +255,27 @@
             this.rbtn_gw2.UseVisualStyleBackColor = true;
             this.rbtn_gw2.CheckedChanged += new System.EventHandler(this.rbtn_gw2_CheckedChanged);
             // 
+            // rbtn_nfspayback
+            // 
+            this.rbtn_nfspayback.AutoSize = true;
+            this.rbtn_nfspayback.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtn_nfspayback.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.rbtn_nfspayback.Location = new System.Drawing.Point(326, 121);
+            this.rbtn_nfspayback.Name = "rbtn_nfspayback";
+            this.rbtn_nfspayback.Size = new System.Drawing.Size(179, 20);
+            this.rbtn_nfspayback.TabIndex = 20;
+            this.rbtn_nfspayback.TabStop = true;
+            this.rbtn_nfspayback.Text = "Need for Speed Payback";
+            this.rbtn_nfspayback.UseVisualStyleBackColor = true;
+            this.rbtn_nfspayback.CheckedChanged += new System.EventHandler(this.rbtn_nfspayback_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.rbtn_nfspayback);
             this.Controls.Add(this.rbtn_gw2);
             this.Controls.Add(this.rbtn_nfsheat);
             this.Controls.Add(this.rbtn_nfs);
@@ -308,6 +324,7 @@
         private System.Windows.Forms.RadioButton rbtn_nfs;
         private System.Windows.Forms.RadioButton rbtn_nfsheat;
         private System.Windows.Forms.RadioButton rbtn_gw2;
+        private System.Windows.Forms.RadioButton rbtn_nfspayback;
     }
 }
 

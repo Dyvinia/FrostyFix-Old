@@ -13,6 +13,7 @@ namespace FrostyFix {
         string mea;
         string bf1;
         string nfs;
+        string nfspayback;
         string nfsheat;
         string gw2;
         string datadir;
@@ -81,7 +82,7 @@ namespace FrostyFix {
                 lbl_enabled.ForeColor = Color.LightSalmon;
             }
 
-            //Save Paths using Registry
+            //Get Paths using Registry
             using (RegistryKey bf2015key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Wow6432Node\EA Games\STAR WARS Battlefront"))
                 if (bf2015key != null) {
                     bf2015 = (string)bf2015key.GetValue("Install Dir");
@@ -125,6 +126,15 @@ namespace FrostyFix {
                 }
                 else {
                     rbtn_nfs.Enabled = false;
+                }
+
+            using (RegistryKey nfspaybackkey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\EA Games\Need for Speed Payback"))
+                if (nfspaybackkey != null) {
+                    nfspayback = (string)nfspaybackkey.GetValue("Install Dir");
+                    rbtn_nfspayback.Enabled = true;
+                }
+                else {
+                    rbtn_nfspayback.Enabled = false;
                 }
 
             using (RegistryKey nfsheatkey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\EA Games\Need for Speed Heat"))
@@ -178,6 +188,12 @@ namespace FrostyFix {
             btn_disable.Enabled = true;
         }
 
+        private void rbtn_nfspayback_CheckedChanged(object sender, EventArgs e) {
+            datadir = nfspayback;
+            btn_enable.Enabled = true;
+            btn_disable.Enabled = true;
+        }
+
         private void rbtn_nfsheat_CheckedChanged(object sender, EventArgs e) {
             datadir = nfsheat;
             btn_enable.Enabled = true;
@@ -190,11 +206,11 @@ namespace FrostyFix {
             btn_disable.Enabled = true;
         }
 
-        //Choose custom path
+        //Choose custom path using game executable
         private void btn_customchoose_Click(object sender, EventArgs e) {
             using (OpenFileDialog openFileDialog = new OpenFileDialog()) {
                 openFileDialog.InitialDirectory = "c:\\";
-                openFileDialog.Filter = "Executable files (*.exe)|*.exe";
+                openFileDialog.Filter = "Game executable (*.exe)|*.exe";
                 openFileDialog.FilterIndex = 2;
                 openFileDialog.RestoreDirectory = true;
 
@@ -206,7 +222,7 @@ namespace FrostyFix {
         }
 
         private void btn_info_Click(object sender, EventArgs e) {
-            string message = "FrostyFix v1.1 for Epic Games Store, Steam, and EA Desktop\r\nCreated by Dulana57, based off the batch file by VictorPLopes, BattleDash & Dulana57\r\n\r\nIt is recommended to launch the game with Frosty after forcing mods.\r\nIt works directly from Origin/EA Desktop but it's better to launch the Game from Frosty Mod Manager/Editor to guarantee everything is working fine and to refresh your mod list.\r\nYou must run this program again every time you want to play another Battlefront game, so you can either disable mods or select the other game.\r\nYou must disable this whenever you play any other Frostbite game or if you encounter issues with other games.\r\nIt may help to restart your computer after running this program.\r\n\r\nFor more information about this fix and/or support, join the Battlefront Modding Discord server at https://discord.gg/EzXSJfUDmq";
+            string message = "FrostyFix v1.1.1 for Epic Games Store, Steam, and EA Desktop\r\nCreated by Dulana57, based off the batch file by VictorPLopes, BattleDash & Dulana57\r\n\r\nIt is recommended to launch the game with Frosty after forcing mods.\r\nIt works directly from Origin/EA Desktop but it's better to launch the Game from Frosty Mod Manager/Editor to guarantee everything is working fine and to refresh your mod list.\r\nYou must run this program again every time you want to play another Battlefront game, so you can either disable mods or select the other game.\r\nYou must disable this whenever you play any other Frostbite game or if you encounter issues with other games.\r\nIt may help to restart your computer after running this program.\r\n\r\nFor more information about this fix and/or support, join the Battlefront Modding Discord server at https://discord.gg/EzXSJfUDmq";
             string title = "Info";
             MessageBox.Show(message, title);
         }
