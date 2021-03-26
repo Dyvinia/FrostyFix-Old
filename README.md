@@ -21,3 +21,6 @@ It works directly from Origin/EA Desktop but it's better to launch Battlefront f
 
 ## Support
 For more information about this fix and/or support, join the [BattlefrontModding](https://discord.gg/EzXSJfUDmq) Discord Server or join my [Personal Discord Server](https://discord.gg/57sJ6fj)
+
+## Credits
+Created by [Dulana57](https://Dulana57.com), based off the batch file by BattleDash, Dulana57, and VictorPLopes
