@@ -114,7 +114,7 @@
             this.rbtn_mea.AutoSize = true;
             this.rbtn_mea.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtn_mea.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.rbtn_mea.Location = new System.Drawing.Point(491, 94);
+            this.rbtn_mea.Location = new System.Drawing.Point(565, 94);
             this.rbtn_mea.Name = "rbtn_mea";
             this.rbtn_mea.Size = new System.Drawing.Size(169, 20);
             this.rbtn_mea.TabIndex = 5;
@@ -128,7 +128,7 @@
             this.rbtn_custom.AutoSize = true;
             this.rbtn_custom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtn_custom.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.rbtn_custom.Location = new System.Drawing.Point(60, 262);
+            this.rbtn_custom.Location = new System.Drawing.Point(60, 255);
             this.rbtn_custom.Name = "rbtn_custom";
             this.rbtn_custom.Size = new System.Drawing.Size(71, 20);
             this.rbtn_custom.TabIndex = 7;
@@ -140,7 +140,7 @@
             // 
             this.txtb_custompath.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.txtb_custompath.Enabled = false;
-            this.txtb_custompath.Location = new System.Drawing.Point(60, 286);
+            this.txtb_custompath.Location = new System.Drawing.Point(60, 279);
             this.txtb_custompath.Name = "txtb_custompath";
             this.txtb_custompath.ReadOnly = true;
             this.txtb_custompath.Size = new System.Drawing.Size(600, 20);
@@ -149,7 +149,7 @@
             // btn_customchoose
             // 
             this.btn_customchoose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_customchoose.Location = new System.Drawing.Point(666, 285);
+            this.btn_customchoose.Location = new System.Drawing.Point(666, 278);
             this.btn_customchoose.Name = "btn_customchoose";
             this.btn_customchoose.Size = new System.Drawing.Size(75, 21);
             this.btn_customchoose.TabIndex = 11;
@@ -217,7 +217,7 @@
             this.rbtn_nfs.AutoSize = true;
             this.rbtn_nfs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtn_nfs.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.rbtn_nfs.Location = new System.Drawing.Point(300, 94);
+            this.rbtn_nfs.Location = new System.Drawing.Point(326, 94);
             this.rbtn_nfs.Name = "rbtn_nfs";
             this.rbtn_nfs.Size = new System.Drawing.Size(122, 20);
             this.rbtn_nfs.TabIndex = 17;
@@ -231,7 +231,7 @@
             this.rbtn_nfsheat.AutoSize = true;
             this.rbtn_nfsheat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtn_nfsheat.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.rbtn_nfsheat.Location = new System.Drawing.Point(300, 121);
+            this.rbtn_nfsheat.Location = new System.Drawing.Point(326, 121);
             this.rbtn_nfsheat.Name = "rbtn_nfsheat";
             this.rbtn_nfsheat.Size = new System.Drawing.Size(154, 20);
             this.rbtn_nfsheat.TabIndex = 18;
@@ -245,7 +245,7 @@
             this.rbtn_gw2.AutoSize = true;
             this.rbtn_gw2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtn_gw2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.rbtn_gw2.Location = new System.Drawing.Point(491, 121);
+            this.rbtn_gw2.Location = new System.Drawing.Point(565, 121);
             this.rbtn_gw2.Name = "rbtn_gw2";
             this.rbtn_gw2.Size = new System.Drawing.Size(162, 20);
             this.rbtn_gw2.TabIndex = 19;
