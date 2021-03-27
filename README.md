@@ -21,7 +21,7 @@ It works directly from Origin/EA Desktop but it's better to launch Battlefront f
 
 ## FAQ
 
-> **Q:** What issues does this fix?
+> **Q:** What issues does FrostyFix solve?
 > 
 > **A:** If you own a Frosty supported game on Steam, Epic Games Store, or use EA Desktop, **Frosty may launch the game without any mods applied**. This has something to do with how command line arguments are handled in platforms other than Origin. FrostyFix sets an environment variable instead of using commandline arguments which makes the platform a game on irrelevent.
 
