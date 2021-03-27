@@ -47,9 +47,9 @@
             this.rbtn_nfsheat = new System.Windows.Forms.RadioButton();
             this.rbtn_gw2 = new System.Windows.Forms.RadioButton();
             this.rbtn_nfspayback = new System.Windows.Forms.RadioButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pb_background = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_background)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_title
@@ -281,15 +281,15 @@
             this.rbtn_nfspayback.UseVisualStyleBackColor = false;
             this.rbtn_nfspayback.CheckedChanged += new System.EventHandler(this.rbtn_nfspayback_CheckedChanged);
             // 
-            // pictureBox2
+            // pb_background
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.pictureBox2.Location = new System.Drawing.Point(5, 69);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(790, 375);
-            this.pictureBox2.TabIndex = 21;
-            this.pictureBox2.TabStop = false;
+            this.pb_background.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pb_background.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.pb_background.Location = new System.Drawing.Point(5, 70);
+            this.pb_background.Name = "pb_background";
+            this.pb_background.Size = new System.Drawing.Size(790, 375);
+            this.pb_background.TabIndex = 21;
+            this.pb_background.TabStop = false;
             // 
             // Form1
             // 
@@ -314,7 +314,7 @@
             this.Controls.Add(this.btn_disable);
             this.Controls.Add(this.btn_enable);
             this.Controls.Add(this.lbl_title);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pb_background);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -323,7 +323,7 @@
             this.Text = "FrostyFix";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_background)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -349,7 +349,7 @@
         private System.Windows.Forms.RadioButton rbtn_nfsheat;
         private System.Windows.Forms.RadioButton rbtn_gw2;
         private System.Windows.Forms.RadioButton rbtn_nfspayback;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pb_background;
     }
 }
 

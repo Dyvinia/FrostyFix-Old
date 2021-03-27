@@ -28,11 +28,13 @@
             this.btn_restartOrigin = new System.Windows.Forms.Button();
             this.btn_restartPC = new System.Windows.Forms.Button();
             this.lbl_title2 = new System.Windows.Forms.Label();
+            this.pb_background = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_background)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_restartEA
             // 
-            this.btn_restartEA.Location = new System.Drawing.Point(145, 75);
+            this.btn_restartEA.Location = new System.Drawing.Point(145, 81);
             this.btn_restartEA.Name = "btn_restartEA";
             this.btn_restartEA.Size = new System.Drawing.Size(155, 33);
             this.btn_restartEA.TabIndex = 0;
@@ -42,7 +44,7 @@
             // 
             // btn_restartOrigin
             // 
-            this.btn_restartOrigin.Location = new System.Drawing.Point(145, 114);
+            this.btn_restartOrigin.Location = new System.Drawing.Point(145, 120);
             this.btn_restartOrigin.Name = "btn_restartOrigin";
             this.btn_restartOrigin.Size = new System.Drawing.Size(155, 33);
             this.btn_restartOrigin.TabIndex = 1;
@@ -54,7 +56,7 @@
             // 
             this.btn_restartPC.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_restartPC.ForeColor = System.Drawing.Color.Red;
-            this.btn_restartPC.Location = new System.Drawing.Point(145, 153);
+            this.btn_restartPC.Location = new System.Drawing.Point(145, 159);
             this.btn_restartPC.Name = "btn_restartPC";
             this.btn_restartPC.Size = new System.Drawing.Size(155, 33);
             this.btn_restartPC.TabIndex = 2;
@@ -69,10 +71,20 @@
             this.lbl_title2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_title2.Location = new System.Drawing.Point(0, 0);
             this.lbl_title2.Name = "lbl_title2";
-            this.lbl_title2.Size = new System.Drawing.Size(445, 69);
+            this.lbl_title2.Size = new System.Drawing.Size(445, 55);
             this.lbl_title2.TabIndex = 3;
             this.lbl_title2.Text = "After Patch Options";
             this.lbl_title2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pb_background
+            // 
+            this.pb_background.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pb_background.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.pb_background.Location = new System.Drawing.Point(5, 53);
+            this.pb_background.Name = "pb_background";
+            this.pb_background.Size = new System.Drawing.Size(435, 169);
+            this.pb_background.TabIndex = 22;
+            this.pb_background.TabStop = false;
             // 
             // Form2
             // 
@@ -80,15 +92,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(445, 227);
-            this.Controls.Add(this.lbl_title2);
             this.Controls.Add(this.btn_restartPC);
             this.Controls.Add(this.btn_restartOrigin);
             this.Controls.Add(this.btn_restartEA);
+            this.Controls.Add(this.pb_background);
+            this.Controls.Add(this.lbl_title2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form2";
             this.Text = "FrostyFix";
+            ((System.ComponentModel.ISupportInitialize)(this.pb_background)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -99,5 +113,6 @@
         private System.Windows.Forms.Button btn_restartOrigin;
         private System.Windows.Forms.Button btn_restartPC;
         private System.Windows.Forms.Label lbl_title2;
+        private System.Windows.Forms.PictureBox pb_background;
     }
 }
