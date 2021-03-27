@@ -13,6 +13,8 @@ A tool to fix Frosty Support with games on platforms other than Origin (EA Deskt
 4. IMPORTANT: Choose one of the **After Patch Options**
 5. Launch game through Frosty
 
+[Video Tutorial](https://www.youtube.com/watch?v=-oUOCvFBGLs)
+
 ## Info
 #### **You must disable this whenever you play any other Frostbite game or if you encounter issues with other games.**
 It is recommended to launch the game with Frosty after forcing mods.
