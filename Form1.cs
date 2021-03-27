@@ -16,6 +16,7 @@ namespace FrostyFix {
         string nfspayback;
         string nfsheat;
         string gw2;
+        string dai;
         string datadir;
 
 
@@ -163,6 +164,16 @@ namespace FrostyFix {
                     rbtn_gw2.ForeColor = System.Drawing.Color.FromArgb(1, 127, 127, 127);
                 }
 
+            using (RegistryKey daikey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Wow6432Node\Bioware\Dragon Age Inquisition"))
+                if (daikey != null) {
+                    dai = (string)daikey.GetValue("Install Dir");
+                    rbtn_dai.Enabled = true;
+                }
+                else {
+                    rbtn_dai.AutoCheck = false;
+                    rbtn_dai.ForeColor = System.Drawing.Color.FromArgb(1, 127, 127, 127);
+                }
+
         }
 
         //Choose Game
@@ -214,6 +225,12 @@ namespace FrostyFix {
             btn_disable.Enabled = true;
         }
 
+        private void rbtn_dai_CheckedChanged(object sender, EventArgs e) {
+            datadir = dai;
+            btn_enable.Enabled = true;
+            btn_disable.Enabled = true;
+        }
+
         //Choose custom path using game executable
         private void btn_customchoose_Click(object sender, EventArgs e) {
             using (OpenFileDialog openFileDialog = new OpenFileDialog()) {
@@ -230,7 +247,7 @@ namespace FrostyFix {
         }
 
         private void btn_info_Click(object sender, EventArgs e) {
-            string message = "FrostyFix v1.1.1 for Epic Games Store, Steam, and EA Desktop\r\nCreated by Dulana57, based off the batch file by VictorPLopes, BattleDash & Dulana57\r\n\r\nIt is recommended to launch the game with Frosty after forcing mods.\r\nIt works directly from Origin/EA Desktop but it's better to launch the Game from Frosty Mod Manager/Editor to guarantee everything is working fine and to refresh your mod list.\r\nYou must run this program again every time you want to play another Battlefront game, so you can either disable mods or select the other game.\r\nYou must disable this whenever you play any other Frostbite game or if you encounter issues with other games.\r\nIt may help to restart your computer after running this program.\r\n\r\nFor more information about this fix and/or support, join the Battlefront Modding Discord server at https://discord.gg/EzXSJfUDmq";
+            string message = "FrostyFix v1.2.2 for Epic Games Store, Steam, and EA Desktop\r\nCreated by Dulana57, based off the batch file by VictorPLopes, BattleDash & Dulana57\r\n\r\nClick the GitHub button to see an FAQ, Software updates, support channels and more\r\n\r\nIt is recommended to launch the game with Frosty after forcing mods.\r\nIt works directly from Origin/EA Desktop but it's better to launch the Game from Frosty Mod Manager/Editor to guarantee everything is working fine and to refresh your mod list.\r\nYou must run this program again every time you want to play another Battlefront game, so you can either disable mods or select the other game.\r\nYou must disable this whenever you play any other Frostbite game or if you encounter issues with other games.\r\nIt may help to restart your computer after running this program.\r\n\r\nFor more information about this fix and/or support, join the Battlefront Modding Discord server at https://discord.gg/EzXSJfUDmq";
             string title = "Info";
             MessageBox.Show(message, title);
         }

@@ -48,6 +48,7 @@
             this.rbtn_gw2 = new System.Windows.Forms.RadioButton();
             this.rbtn_nfspayback = new System.Windows.Forms.RadioButton();
             this.pb_background = new System.Windows.Forms.PictureBox();
+            this.rbtn_dai = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_background)).BeginInit();
             this.SuspendLayout();
@@ -291,12 +292,28 @@
             this.pb_background.TabIndex = 21;
             this.pb_background.TabStop = false;
             // 
+            // rbtn_dai
+            // 
+            this.rbtn_dai.AutoSize = true;
+            this.rbtn_dai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.rbtn_dai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtn_dai.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.rbtn_dai.Location = new System.Drawing.Point(565, 147);
+            this.rbtn_dai.Name = "rbtn_dai";
+            this.rbtn_dai.Size = new System.Drawing.Size(161, 20);
+            this.rbtn_dai.TabIndex = 22;
+            this.rbtn_dai.TabStop = true;
+            this.rbtn_dai.Text = "Dragon Age Inquisition";
+            this.rbtn_dai.UseVisualStyleBackColor = false;
+            this.rbtn_dai.CheckedChanged += new System.EventHandler(this.rbtn_dai_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.rbtn_dai);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.rbtn_nfspayback);
             this.Controls.Add(this.rbtn_gw2);
@@ -350,6 +367,7 @@
         private System.Windows.Forms.RadioButton rbtn_gw2;
         private System.Windows.Forms.RadioButton rbtn_nfspayback;
         private System.Windows.Forms.PictureBox pb_background;
+        private System.Windows.Forms.RadioButton rbtn_dai;
     }
 }
 
