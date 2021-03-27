@@ -21,19 +21,19 @@ It works directly from Origin/EA Desktop but it's better to launch Battlefront f
 
 ## FAQ
 
-**Q:** What issues does this fix?
-
-**A:** If you own a Frosty supported game on Steam, Epic Games Store, or use EA Desktop, **Frosty may launch the game without any mods applied**. This has something to do with how command line arguments are handled in platforms other than Origin. FrostyFix sets an environment variable instead of using commandline arguments which makes the platform a game on irrelevent.
-
-
-**Q:** Frosty is giving me an error, how do I use FrostyFix to solve this?
-
-**A:** If Frosty is giving you an error, then it is an issue with your mod setup or how your Frosty is configured. FrostyFix is not made to solve that issue.
+> **Q:** What issues does this fix?
+> 
+> **A:** If you own a Frosty supported game on Steam, Epic Games Store, or use EA Desktop, **Frosty may launch the game without any mods applied**. This has something to do with how command line arguments are handled in platforms other than Origin. FrostyFix sets an environment variable instead of using commandline arguments which makes the platform a game on irrelevent.
 
 
-**Q:** Why are some games greyed out?
+> **Q:** Frosty is giving me an error, how do I use FrostyFix to solve this?
+> 
+> **A:** If Frosty is giving you an error, then it is an issue with your mod setup or how your Frosty is configured. FrostyFix is not made to solve that issue.
 
-**A:** If FrostyFix cannot locate a game, it greys out the option making it unselectable to prevent an empty variable to be set.
+
+> **Q:** Why are some games greyed out?
+> 
+> **A:** If FrostyFix cannot locate a game, it greys out the option making it unselectable to prevent an empty variable to be set.
 
 
 ## Support
