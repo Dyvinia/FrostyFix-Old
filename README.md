@@ -19,8 +19,25 @@ It is recommended to launch the game with Frosty after forcing mods.
 It works directly from Origin/EA Desktop but it's better to launch Battlefront from Frosty Mod Manager/Editor to guarantee everything is working fine and to refresh your mod list.
 **You must run this program again every time you want to play another Frostbite game**, so you can either disable mods or select the other game.
 
+## FAQ
+
+**Q:** What issues does this fix?
+
+**A:** If you own a Frosty supported game on Steam, Epic Games Store, or use EA Desktop, **Frosty may launch the game without any mods applied**. This has something to do with how command line arguments are handled in platforms other than Origin. FrostyFix sets an environment variable instead of using commandline arguments which makes the platform a game on irrelevent.
+##
+
+**Q:** Frosty is giving me an error, how do I use FrostyFix to solve this?
+
+**A:** If Frosty is giving you an error, then it is an issue with your mod setup or how your Frosty is configured. FrostyFix is not made to solve that issue.
+##
+
+**Q:** Why are some games greyed out?
+
+**A:** If FrostyFix cannot locate a game, it greys out the option making it unselectable to prevent an empty variable to be set.
+##
+
 ## Support
-For more information about this fix and/or support, join the [BattlefrontModding](https://discord.gg/EzXSJfUDmq) Discord Server or join my [Personal Discord Server](https://discord.gg/57sJ6fj)
+For more information about this fix and/or support, join my [Discord Server](https://discord.gg/57sJ6fj) or join the [BattlefrontModding](https://discord.gg/EzXSJfUDmq) Discord Server
 
 ## Credits
 Created by [Dulana57](https://Dulana57.com), based off the batch file by [BattleDash](https://forums.nexusmods.com/index.php?/topic/9737483-a-permanent-solution-to-epic-games-modding/), [Dulana57](https://Dulana57.com), and VictorPLopes
