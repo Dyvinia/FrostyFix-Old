@@ -25,11 +25,17 @@ It works directly from Origin/EA Desktop but it's better to launch Battlefront f
 > 
 > **A:** If you own a Frosty supported game on Steam, Epic Games Store, or use EA Desktop, **Frosty may launch the game without any mods applied**. This has something to do with how command line arguments are handled in platforms other than Origin. FrostyFix sets an environment variable instead of using commandline arguments which makes the platform a game on irrelevent.
 
-
 > **Q:** Frosty is giving me an error, how do I use FrostyFix to solve this?
 > 
-> **A:** If Frosty is giving you an error, then it is an issue with your mod setup or how your Frosty is configured. FrostyFix is not made to solve that issue.
+> **A:** If Frosty is giving you an error, then it is an issue with your mod setup or how your Frosty is configured. FrostyFix was not created to solve those issue.
 
+> **Q:** Mods are still not working after FrostyFix
+> 
+> **A:** Make sure to click on either **Restart Origin** or **Restart EA Desktop** in the After Patch Options (Depending on the platform you use. If that does not work, it is recommended to restart your PC and launch the game after that.
+
+> **Q:** When I try to launch game other than the one I chose in FrostyFix, I get an error
+> 
+> **A:** You **MUST** disable mods before playing any other Frostbite game 
 
 > **Q:** Why are some games greyed out?
 > 
@@ -37,7 +43,7 @@ It works directly from Origin/EA Desktop but it's better to launch Battlefront f
 
 
 ## Support
-For more information about this fix and/or support, join my [Discord Server](https://discord.gg/57sJ6fj) or join the [BattlefrontModding](https://discord.gg/EzXSJfUDmq) Discord Server
+For more information and/or support about FrostyFix, join [my Discord Server](https://discord.gg/57sJ6fj) or join the [BattlefrontModding Discord Server](https://discord.gg/EzXSJfUDmq)
 
 ## Credits
-Created by [Dulana57](https://Dulana57.com), based off the batch file by [BattleDash](https://forums.nexusmods.com/index.php?/topic/9737483-a-permanent-solution-to-epic-games-modding/), [Dulana57](https://Dulana57.com), and VictorPLopes
+Created by [Dulana57](https://Dulana57.com), based off the batch file by [BattleDash](https://forums.nexusmods.com/index.php?/topic/9737483-a-permanent-solution-to-epic-games-modding/), [Dulana57](https://Dulana57.com), and [VictorPLopes](https://twitter.com/VictorPL2003/)
