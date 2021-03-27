@@ -297,6 +297,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.rbtn_nfspayback);
             this.Controls.Add(this.rbtn_gw2);
             this.Controls.Add(this.rbtn_nfsheat);
@@ -315,7 +316,6 @@
             this.Controls.Add(this.btn_enable);
             this.Controls.Add(this.lbl_title);
             this.Controls.Add(this.pb_background);
-            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
