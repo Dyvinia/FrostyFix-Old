@@ -36,15 +36,6 @@ namespace FrostyFix {
             foreach (var process in Process.GetProcessesByName("Origin")) {
                 process.Kill();
             }
-            foreach (var process in Process.GetProcessesByName("EABackgroundService")) {
-                process.Kill();
-            }
-            foreach (var process in Process.GetProcessesByName("OriginClientService")) {
-                process.Kill();
-            }
-            foreach (var process in Process.GetProcessesByName("OriginWebHelperService")) {
-                process.Kill();
-            }
             await Task.Delay(8000);
             System.Diagnostics.Process.Start(eaddir);
             this.Close();
@@ -56,15 +47,6 @@ namespace FrostyFix {
                 process.Kill();
             }
             foreach (var process in Process.GetProcessesByName("Origin")) {
-                process.Kill();
-            }
-            foreach (var process in Process.GetProcessesByName("EABackgroundService")) {
-                process.Kill();
-            }
-            foreach (var process in Process.GetProcessesByName("OriginClientService")) {
-                process.Kill();
-            }
-            foreach (var process in Process.GetProcessesByName("OriginWebHelperService")) {
                 process.Kill();
             }
             await Task.Delay(8000);
