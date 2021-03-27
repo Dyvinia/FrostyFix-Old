@@ -31,7 +31,7 @@ It works directly from Origin/EA Desktop but it's better to launch Battlefront f
 
 > **Q:** Mods are still not working after FrostyFix
 > 
-> **A:** Make sure to click on either **Restart Origin** or **Restart EA Desktop** in the After Patch Options (Depending on the platform you use. If that does not work, it is recommended to restart your PC and launch the game after that.
+> **A:** Make sure to click on either **Restart Origin** or **Restart EA Desktop** in the After Patch Options (Depending on the platform you use. If that does not work, try restarting Origin or EADesk again. If it still does not work, it is recommended to restart your PC and launch the game after that.
 
 > **Q:** When I try to launch game other than the one I chose in FrostyFix, I get an error
 > 
