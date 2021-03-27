@@ -143,6 +143,7 @@
             this.rbtn_custom.TabStop = true;
             this.rbtn_custom.Text = "Custom";
             this.rbtn_custom.UseVisualStyleBackColor = false;
+            this.rbtn_custom.CheckedChanged += new System.EventHandler(this.rbtn_custom_CheckedChanged);
             // 
             // txtb_custompath
             // 
@@ -156,6 +157,7 @@
             // 
             // btn_customchoose
             // 
+            this.btn_customchoose.Enabled = false;
             this.btn_customchoose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_customchoose.Location = new System.Drawing.Point(666, 278);
             this.btn_customchoose.Name = "btn_customchoose";
@@ -170,7 +172,7 @@
             // 
             this.lbl_enabled.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.lbl_enabled.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lbl_enabled.Location = new System.Drawing.Point(150, 316);
+            this.lbl_enabled.Location = new System.Drawing.Point(151, 316);
             this.lbl_enabled.Name = "lbl_enabled";
             this.lbl_enabled.Size = new System.Drawing.Size(500, 13);
             this.lbl_enabled.TabIndex = 12;

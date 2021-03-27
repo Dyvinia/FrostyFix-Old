@@ -233,6 +233,8 @@ namespace FrostyFix {
 
         //Choose custom path using game executable
         private void btn_customchoose_Click(object sender, EventArgs e) {
+            btn_enable.Enabled = true;
+            btn_disable.Enabled = true;
             using (OpenFileDialog openFileDialog = new OpenFileDialog()) {
                 openFileDialog.InitialDirectory = "c:\\";
                 openFileDialog.Filter = "Game executable (*.exe)|*.exe";
@@ -247,13 +249,17 @@ namespace FrostyFix {
         }
 
         private void btn_info_Click(object sender, EventArgs e) {
-            string message = "FrostyFix v1.2.2 for Epic Games Store, Steam, and EA Desktop\r\nCreated by Dulana57, based off the batch file by VictorPLopes, BattleDash & Dulana57\r\n\r\nClick the GitHub button to see an FAQ, Software updates, support channels and more\r\n\r\nIt is recommended to launch the game with Frosty after forcing mods.\r\nIt works directly from Origin/EA Desktop but it's better to launch the Game from Frosty Mod Manager/Editor to guarantee everything is working fine and to refresh your mod list.\r\nYou must run this program again every time you want to play another Battlefront game, so you can either disable mods or select the other game.\r\nYou must disable this whenever you play any other Frostbite game or if you encounter issues with other games.\r\nIt may help to restart your computer after running this program.\r\n\r\nFor more information about this fix and/or support, join the Battlefront Modding Discord server at https://discord.gg/EzXSJfUDmq";
+            string message = "FrostyFix v1.2.3 for Epic Games Store, Steam, and EA Desktop\r\nCreated by Dulana57, based off the batch file by VictorPLopes, BattleDash & Dulana57\r\n\r\nClick the GitHub button to see an FAQ, Software updates, support channels and more\r\n\r\nIt is recommended to launch the game with Frosty after forcing mods.\r\nIt works directly from Origin/EA Desktop but it's better to launch the Game from Frosty Mod Manager/Editor to guarantee everything is working fine and to refresh your mod list.\r\nYou must run this program again every time you want to play another Battlefront game, so you can either disable mods or select the other game.\r\nYou must disable this whenever you play any other Frostbite game or if you encounter issues with other games.\r\nIt may help to restart your computer after running this program.\r\n\r\nFor more information about this fix and/or support, join the Battlefront Modding Discord server at https://discord.gg/EzXSJfUDmq";
             string title = "Info";
             MessageBox.Show(message, title);
         }
 
         private void btn_github_Click(object sender, EventArgs e) {
             System.Diagnostics.Process.Start("https://github.com/Dulana57/FrostyFix");
+        }
+
+        private void rbtn_custom_CheckedChanged(object sender, EventArgs e) {
+            btn_customchoose.Enabled = true;
         }
     }
 }
