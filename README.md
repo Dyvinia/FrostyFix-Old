@@ -1,7 +1,7 @@
 # FrostyFix
 A tool to fix Frosty Support with games on platforms other than Origin (EA Desktop, Epic Games Store, Steam)
 
-![image](https://user-images.githubusercontent.com/13797470/112701597-70318000-8e67-11eb-8c85-1c788e1fec80.png)
+![image](https://user-images.githubusercontent.com/13797470/112704194-0c5f8500-8e70-11eb-9d17-528b40f8a3cb.png)
 
 ## Instructions
 
