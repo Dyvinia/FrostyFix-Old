@@ -17,14 +17,14 @@ namespace FrostyFix {
                     origindir = (string)origindirkey.GetValue("EADM6InstallDir");
                 }
                 else {
-                    btn_restartEA.Enabled = false;
+                    btn_restartOrigin.Enabled = false;
                 }
             using (RegistryKey eaddirkey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\WOW6432Node\Electronic Arts\EA Desktop"))
                 if (eaddirkey != null) {
                     eaddir = (string)eaddirkey.GetValue("DesktopAppPath");
                 }
                 else {
-                    btn_restartOrigin.Enabled = false;
+                    btn_restartEA.Enabled = false;
                 }
         }
 
