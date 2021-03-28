@@ -243,7 +243,7 @@ namespace FrostyFix {
             btn_enable.Enabled = true;
             btn_disable.Enabled = true;
             using (OpenFileDialog openFileDialog = new OpenFileDialog()) {
-                openFileDialog.InitialDirectory = "c:\\";
+                //openFileDialog.InitialDirectory = "c:\\";
                 openFileDialog.Filter = "Game executable (*.exe)|*.exe";
                 openFileDialog.FilterIndex = 2;
                 openFileDialog.RestoreDirectory = true;

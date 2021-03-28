@@ -132,13 +132,12 @@
             // 
             // rbtn_custom
             // 
-            this.rbtn_custom.AutoSize = true;
             this.rbtn_custom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.rbtn_custom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtn_custom.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.rbtn_custom.Location = new System.Drawing.Point(60, 255);
             this.rbtn_custom.Name = "rbtn_custom";
-            this.rbtn_custom.Size = new System.Drawing.Size(71, 20);
+            this.rbtn_custom.Size = new System.Drawing.Size(681, 20);
             this.rbtn_custom.TabIndex = 7;
             this.rbtn_custom.TabStop = true;
             this.rbtn_custom.Text = "Custom";
