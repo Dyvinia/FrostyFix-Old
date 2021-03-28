@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.IO;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Win32;
 
@@ -24,9 +25,12 @@ namespace FrostyFix {
             InitializeComponent();
         }
 
-        private void btn_enable_Click(object sender, EventArgs e) {
+        private async void btn_enable_Click(object sender, EventArgs e) {
+            Application.UseWaitCursor = true;
             Environment.SetEnvironmentVariable("GAME_DATA_DIR", datadir + "\\ModData", EnvironmentVariableTarget.User);
-            
+            await Task.Delay(100);
+            Application.UseWaitCursor = false;
+
             //Recheck patch status
             var isenabled = Environment.GetEnvironmentVariable("GAME_DATA_DIR", EnvironmentVariableTarget.User);
             if (isenabled == "\\ModData") {
@@ -45,9 +49,12 @@ namespace FrostyFix {
             f2.ShowDialog();
         }
 
-        private void btn_disable_Click(object sender, EventArgs e) {
+        private async void btn_disable_Click(object sender, EventArgs e) {
+            Application.UseWaitCursor = true;
             Environment.SetEnvironmentVariable("GAME_DATA_DIR", "", EnvironmentVariableTarget.User);
-            
+            await Task.Delay(100);
+            Application.UseWaitCursor = false;
+
             //Recheck patch status
             var isenabled = Environment.GetEnvironmentVariable("GAME_DATA_DIR", EnvironmentVariableTarget.User);
             if (isenabled == "\\ModData") {

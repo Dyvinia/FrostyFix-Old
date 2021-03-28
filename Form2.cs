@@ -36,7 +36,9 @@ namespace FrostyFix {
             foreach (var process in Process.GetProcessesByName("Origin")) {
                 process.Kill();
             }
+            Application.UseWaitCursor = true;
             await Task.Delay(8000);
+            Application.UseWaitCursor = false;
             System.Diagnostics.Process.Start(eaddir);
             this.Close();
         }
@@ -49,7 +51,9 @@ namespace FrostyFix {
             foreach (var process in Process.GetProcessesByName("Origin")) {
                 process.Kill();
             }
+            Application.UseWaitCursor = true;
             await Task.Delay(8000);
+            Application.UseWaitCursor = false;
             System.Diagnostics.Process.Start(origindir + "\\Origin.exe");
             this.Close();
 
