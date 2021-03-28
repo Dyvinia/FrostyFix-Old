@@ -54,7 +54,12 @@ namespace FrostyFix {
             Application.UseWaitCursor = true;
             await Task.Delay(8000);
             Application.UseWaitCursor = false;
-            System.Diagnostics.Process.Start(origindir + "\\Origin.exe");
+            //System.Diagnostics.Process.Start(origindir + "\\Origin.exe");
+            Process p = new Process();
+            p.StartInfo.UseShellExecute = false;
+            p.StartInfo.WorkingDirectory = origindir;
+            p.StartInfo.FileName = origindir + "\\Origin.exe";
+            p.Start();
             this.Close();
 
         }
